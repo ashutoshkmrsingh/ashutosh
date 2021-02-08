@@ -1,12 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: auto;
 }
 
 body {
     display: inline;
+    background: #F2F2F2;
+    /* overflow: hidden; */
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    background: var(--secondary-color-one);
+    margin-top: 5%;
+    box-shadow: 0px 0px 25px #6386a7;
+    /* margin-top: 10%; */
 }
 
 :root {
@@ -90,7 +105,7 @@ div a:hover {
     background-size: contain;
     height: 80vh;
     width: 55vw;
-    margin-top: 8vh;
+    margin-top: 2vh;
     margin-left: 1vw;
     background-repeat: no-repeat;
     display: block;
@@ -187,7 +202,7 @@ div a:hover {
     width: 100vw;
     background-size: 80vh 40vw;
     background-repeat: no-repeat;
-    margin: 6% 0% 0% 15%;
+    margin: 2% 0% 0% 6%;
 }
 
 main {
@@ -201,10 +216,10 @@ main {
     width: 22vw;
     background-size: 45vh 23vw;
     background-repeat: no-repeat;
-    margin: -30% 0% -55% 155%;
+    margin: -60% 0% -55% 145%;
     animation-name: move;
     animation-duration: 20s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
 
 @keyframes move {
@@ -246,4 +261,202 @@ a {
     background-size: 65vh 20vw;
     background-repeat: no-repeat;
     margin: -20% 0% -55% 70%;
+}
+
+#projects {
+    background: linear-gradient(to bottom,#120E43, var(--primary-color));
+    width: 100%;
+    height: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+}
+
+.nav-project {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: var(--left-margin);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+div div nav a {
+    color: rgb(199, 199, 199);
+    text-decoration: none;
+    padding: 15px;
+    font-size: 2vh;
+}
+
+div div nav a span {
+    color: white;
+}
+
+div div nav a:hover {
+    transition: 500ms;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.project-left {
+    margin-top: 5%;
+    width: 80%;
+    height: auto;
+    background: #ffffff42;
+    display: flex;
+}
+
+.project-image {
+    width: 40vw;
+    height: 50vh;
+    margin: 0;
+}
+
+a:hover {
+    transition: 500ms;
+    font-size: 0em;
+    color:  white;
+}
+
+.project-note {
+    align-items: center;
+    display: inline-block;
+}
+
+.project-details {
+    color: white;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0% 10%;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+
+.project-btn {
+    display: block;
+    margin: auto;
+    color: white;
+    border-bottom: 3px solid white;
+    border-top: 3px solid white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 80%;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 5%;
+    font-size: 1em;
+    background: #232ecab2;
+    box-shadow: 0 4px 4px var(--primary-color), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#achievements {
+    background: url(assets/sih.jpg);
+    background-color: #000000b0;
+    background-size: contain;
+    height: 100vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    display: block;
+    margin: none;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0);
+}
+
+#achievements:hover {
+    box-shadow: inset 0 0 0 1000px rgba(4, 27, 89, .7);
+}
+
+.achievement-details {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    font-size: 2em;
+    line-height: 200%;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+#education {
+    margin-top: 5%;
+    width: 100%;
+    height: 5vh;
+}
+
+.span-blue{
+    font-size: 1.3em;
+    color: var(--primary-color);
+}
+
+.education-details {
+    margin: 5%;
+    margin-left: 10%;
+    width: 80%;
+    height: 50vh;
+    background: #110157a6;
+    display: flex;
+}
+
+.college {
+    width: 20vw;
+    height: 40vh;
+    background: var(--primary-color);
+    box-shadow: 0 0px 10px #fffdfd;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    align-self: center;
+    color: white;
+    line-height: 200%;
+}
+
+.college p {
+    margin: 10% 10%;
+}
+
+.college:hover {
+    width: 25vw;
+    height: 45vh;
+    border: 2px solid var(--secondary-color-one);
+    background: #758283;
+    transition: .8s ease;
+    color: var(--primary-color);
+    font-size: 1.2em;
+}
+
+#margin {
+    background: var(--primary-color);
+    width: 100vw;
+    height: 40vh;
+}
+
+#contact {
+    background: var(--secondary-color-one);
+    width: 100vw;
+    height: 80vh;
+}
+
+.contact-div {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    align-self: center;
+}
+
+.contact-div p {
+    margin-left: 10%;
+}
+
+#connection {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    align-self: center;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.icon {
+    width: 5vw;
+    height: 5vw;
 }
